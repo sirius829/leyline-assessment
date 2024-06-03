@@ -16,14 +16,21 @@ You need to have installed Node.js (developed with Node.js 18.18.2)
 - Running backend
 ```bash
     cd settlement-backend
+    npm install
     npm run dev
 ```
 It will run the backend development server on http://localhost:5000.
 And database file will be created at `settlement-backend/db/`.
 
 - Running frontend
+You should create .env and add `REACT_APP_API_URL` first.
 ```bash
     cd settlement-frontend
+    echo REACT_APP_API_URL=http://localhost:5000 > .env
+```
+Then you can install necessary packages and start the server.
+```bash
+    npm install
     npm start
 ```
 It will run the frontend application on http://localhost:3000.
