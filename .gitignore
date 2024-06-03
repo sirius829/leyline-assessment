@@ -6,9 +6,6 @@ settlement-frontend/node_modules
 /.pnp
 .pnp.js
 
-# database
-settlement-backend/db
-
 # testing
 /coverage
 
