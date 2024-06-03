@@ -18,15 +18,15 @@ You need to have installed Node.js (developed with Node.js 18.18.2)
     cd settlement-backend
     npm run dev
 ```
-    It will run the backend development server on http://localhost:5000.
-    And database file will be created at `settlement-backend/db/`.
+It will run the backend development server on http://localhost:5000.
+And database file will be created at `settlement-backend/db/`.
 
 - Running frontend
 ```bash
     cd settlement-frontend
     npm start
 ```
-    It will run the frontend application on http://localhost:3000.
+It will run the frontend application on http://localhost:3000.
 
 ## Guide to application
 
