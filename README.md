@@ -17,6 +17,9 @@ You need to have installed Node.js (developed with Node.js 18.18.2)
 ```bash
     cd settlement-backend
     npm install
+    // should migrate and seed
+    npx knex migrate:latest
+    npx knex seed:run
     npm run dev
 ```
 It will run the backend development server on http://localhost:5000.
@@ -37,12 +40,14 @@ It will run the frontend application on http://localhost:3000.
 
 ## Guide to application
 
-After run the project locally, go to http://localhost:3000/party-a.
-It's the page for Party A, and you can input and submit amount there.
-And on http://localhost:3000/party-b, you can check and deal with it.
+After run the project locally, go to http://localhost:3000.
+You will be redirect to login page.
+Here are login infos:
+Party A:
+name: `partyA`, password: `passwordA`
+party B:
+name: `partyB`, password: `passwordB`
 
-## To Do
+## screenshots
 
-- The authorization and authenticate need to be added to detect which party has logined to the application.
-- Should show only allowed page for party A or B.
 

@@ -1,11 +1,11 @@
 import { Router } from "express";
-import { getAmount, getResponse, submitSettlement, respondSettlement } from "../../controllers/settlement.controller";
+import transRouter from "./transaction";
+import authRouter from "./auth";
+import { authenticateMiddleware } from "../../Middlewares/authModdleware";
 
 const v1Router = Router();
 
-v1Router.get("/amount", getAmount);
-v1Router.get("/response", getResponse);
-v1Router.post("/submit", submitSettlement);
-v1Router.post("/respond", respondSettlement);
+v1Router.use("/auth", authRouter);
+v1Router.use("/settlement", authenticateMiddleware, transRouter);
 
 export default v1Router;
