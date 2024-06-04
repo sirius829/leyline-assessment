@@ -6,8 +6,8 @@ This technical challenge involves implementing a settlement process between two 
 
 ## Structure
 
-/settlement-backend: backend(Node.js, Express.js), database (SQLite)
-/settlement-frontend: frontend(React)
+- /settlement-backend: backend(Node.js, Express.js), database (SQLite)
+- /settlement-frontend: frontend(React)
 
 ## How to run the application
 
@@ -49,5 +49,9 @@ party B:
 name: `partyB`, password: `passwordB`
 
 ## screenshots
+![image](https://github.com/sirius829/leyline-assessment/assets/133846033/67bb7d5d-cffc-4884-8372-bfb47fa518ae)
+![image](https://github.com/sirius829/leyline-assessment/assets/133846033/a015e881-6f1a-4d09-b11f-994a2a886537)
+![image](https://github.com/sirius829/leyline-assessment/assets/133846033/e700840a-f7ba-422a-bdab-815211d33eb5)
 
-
+## To Do
+- logout on frontend not implemented.
