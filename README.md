@@ -18,8 +18,7 @@ You need to have installed Node.js (developed with Node.js 18.18.2)
     cd settlement-backend
     npm install
     // should migrate and seed
-    npx knex migrate:latest
-    npx knex seed:run
+    npm run migrate:seed
     npm run dev
 ```
 It will run the backend development server on http://localhost:5000.
